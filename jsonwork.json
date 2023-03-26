@@ -1,0 +1,93 @@
+{
+    "name": "tarun",
+    "score": 54,
+    "isAdmin": false
+}
+// 🥇 inscpet code
+
+myJson=`{
+    "name": "tarun",
+    "score": 54,
+    "isAdmin": false
+}`
+'{
+    "name": "tarun",\n    "score": 54,\n   "isAdmin":false\n
+}'
+
+JSON.parse(myJson)
+{name: 'tarun', score: 54, isAdmin: false
+}            👍 it sshow that ki json ko convert kr diya convert kr diya object me 
+                                                      👍 and it look like similar to js that why we use json                           
+                                                
+
+
+                                         👍next
+
+                                                      {
+    "name": "tarun",
+    "score": 54,
+    "isAdmin": false,
+    "licese": null,
+    "shopitem": [
+        "food",
+        "clothes"
+
+    ],
+    "myobj": {
+        "name": "nested",
+        "class": "12",
+        "shopitem2": [
+            "ok",
+            "not",
+            {
+                "a": 65
+            }
+        ]
+    }
+}
+
+parse.isAdmin
+false                                                       both wway you can acces object
+                                    
+parse[isAdmin]                             
+false'
+                                             
+                                    
+
+                                 ========================= 💯imp
+
+
+
+
+
+                                 myJson=`  {
+                                    "name": "tarun",
+                                    "score": 54,
+                                    "isAdmin": false,
+                                    "licese": null,
+                                    "shopitem": [
+                                        "food",
+                                        "clothes"
+                                
+                                    ],
+                                    "myobj": {
+                                        "name": "nested",
+                                        "class": "12",
+                                        "shopitem2": [
+                                            "ok",
+                                            "not",
+                                            {
+                                                "a": 65
+                                            }
+                                        ]
+                                    }
+                                }`
+                                '  {\n    "name": "tarun",\n    "score": 54,\n    "isAdmin": false,\n    "licese": null,\n    "shopitem": [\n        "food",\n        "clothes"\n\n    ],\n    "myobj": {\n        "name": "nested",\n        "class": "12",\n        "shopitem2": [\n            "ok",\n            "not",\n            {\n                "a": 65\n            }\n        ]\n    }\n}'
+                                 pars=JSON.parse(myJson)
+                                {name: 'tarun', score: 54, isAdmin: false, licese: null, shopitem: Array(2), …}
+                                 now i want to acces 
+                                VM2802:1 Uncaught SyntaxError: Unexpected identifier 'i'
+                                   pars.shopitem['1']
+                                'clothes'
+                                parse.myobj.shopitem2['2']
+                                {a: 65}
